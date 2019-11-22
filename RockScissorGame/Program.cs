@@ -10,7 +10,9 @@ namespace RockScissorGame
     {
         static void Main(string[] args)
         {
-          //  Game game = new Game();
+            Game mygame = new Game();
+            mygame.GameRun();
+              
         }
     }
 }

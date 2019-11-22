@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace RockScissorGame
 {
-    public abstract class Player
+   public abstract class Player
     {
-    public int numberOfWins;
+    public List<string> gestures = new List<string>() { "ROCK", "PAPER", "SCISSOR", "LIZARD", "SPOCK" };
     public string name;
-    public int currentSelection;
-    public Player()
-    {
-    numberOfWins = 0;
-    }
+    public int score;
+   public string gesture;
+   
     public abstract void ChooseGesture();
+    public abstract void ChooseName();
     }
 }

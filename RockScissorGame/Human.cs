@@ -10,11 +10,26 @@ namespace RockScissorGame
     { 
       public Human()
       {
-      this.name = "HumanPlayer";
+            this.name = "Human";
       }
-      public override void ChooseGesture()
-      {
-      }
+        public override void ChooseGesture()
+        {
+            Console.WriteLine("Which gesture you want to choose...");
+           
+            foreach (string gesture in gestures)
+            {
 
+             Console.WriteLine(gesture);
+            
+            }
+
+            gesture = Console.ReadLine();
+        }
+      public override void ChooseName()
+        {
+         Console.WriteLine("Choose a Name....");
+            name = Console.ReadLine();
+           
+        }
     }
 }

@@ -8,13 +8,20 @@ namespace RockScissorGame
 {
     public class Computer : Player
     {
-        public Random randomNumber = new Random();
+       public Random rnd = new Random();
         public Computer()
         {
-            this.name = "ComputerPlayer";
+           
+        }
+        public override void ChooseName()
+        {
+            this.name ="Computer";
         }
         public  override void ChooseGesture()
         {
+            int n = rnd.Next(0, 4);
+            Console.WriteLine("Computer:" + gestures[n]);
+            gesture = gestures[n];
         }
     }
 }
