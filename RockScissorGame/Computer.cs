@@ -20,7 +20,7 @@ namespace RockScissorGame
         public  override void ChooseGesture()
         {
             int n = rnd.Next(0, 4);
-            Console.WriteLine("Computer:" + gestures[n]);
+            Console.WriteLine("Computer choose this gesture ->:" + gestures[n]);
             gesture = gestures[n];
         }
     }
