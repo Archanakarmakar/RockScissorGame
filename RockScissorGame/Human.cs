@@ -33,9 +33,9 @@ namespace RockScissorGame
         }
         public override void ChooseName()
         {
-            Console.WriteLine("PLEASE Choose a Name OF gesture list..... .");
+            Console.WriteLine("PLEASE Choose a Name of player..... .");
             name = Console.ReadLine();
-           // Console.WriteLine("name of gesture" + name);
+            Console.WriteLine("\nName of Player.." + name);
 
         }
 
